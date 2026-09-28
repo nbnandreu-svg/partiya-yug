@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://partiya-yug-rostov.nbnandreu.chatgpt.site/sitemap.xml

@@ -1,0 +1,8 @@
+research/
+qa/
+deliverables/
+scripts/
+site/__pycache__/
+site/.openai/
+**/.env
+*.log

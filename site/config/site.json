@@ -1,0 +1,14 @@
+{
+  "brand": "Партия Юг",
+  "descriptor": "Фулфилмент в Ростове-на-Дону",
+  "city": "Ростов-на-Дону",
+  "demo": true,
+  "origin": "https://partiya-yug-rostov.nbnandreu.chatgpt.site",
+  "contact": {"phone": null, "email": null, "telegram": null, "address": null, "hours": null},
+  "conditions": {"minimumBatch": null, "cutoff": null, "processingTime": null},
+  "rates": {"receive": 5, "label": 3, "pack": 12, "material": 8, "boxDelivery": 350, "storageM3Day": 35, "fbsPick": 30, "return": 40},
+  "defaults": {"units": 500, "boxes": 5, "orders": 300, "volume": 1, "days": 30},
+  "rateNote": "Демонстрационные тарифы. Показывают принцип расчета и не являются коммерческим предложением.",
+  "verified": {"warehousePhotos": false, "videoControl": false, "insurance": false, "responsibilityTerms": false},
+  "form": {"mode": "demo", "endpoint": null}
+}

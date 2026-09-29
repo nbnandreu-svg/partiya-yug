@@ -50,7 +50,8 @@ if (calc) {
     document.getElementById('boxes-field').hidden=isFbs;boxes.disabled=isFbs;
     q.value=isFbs?siteData.defaults.orders:siteData.defaults.units;
     volume.value=isFbs?siteData.defaults.volume:0; days.value=isFbs?siteData.defaults.days:0;
-    document.getElementById('calc-exclusions').textContent=isFbs?'Отдельно: приемка запаса, доставка заказов, возвраты и специальные операции. НДС и коммерческие условия пока не определены.':'Отдельно: забор у поставщика, нестандартные работы, хранение при необходимости. НДС и коммерческие условия пока не определены.';
+    document.getElementById('calc-condition').textContent=isFbs?'Один товар, один пакет и одна этикетка в каждом заказе. Пример за выбранное число дней без специальных операций.':'Один товар в индивидуальном пакете и одна этикетка на единицу. Типовой пример без специальных операций.';
+    document.getElementById('calc-exclusions').textContent=isFbs?'Не включены приемка запаса, доставка заказов, возвраты и специальные операции. Налоговые условия уточняются при согласовании цены.':'Не включены забор у поставщика и нестандартные работы. Хранение учитывается по введенным объему и сроку. Налоговые условия уточняются при согласовании цены.';
     update();
   };
   calc.addEventListener('input',update);

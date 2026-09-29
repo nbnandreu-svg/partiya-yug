@@ -24,8 +24,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build and validate the static site
+        run: |
+          python site/build.py
+          python site/check.py
+
       - name: Point links at the GitHub Pages address
-        run: python site/prepare_pages.py
+        run: |
+          python site/prepare_pages.py
+          python site/check.py --base /partiya-yug
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3

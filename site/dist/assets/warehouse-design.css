@@ -168,4 +168,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .arrival{margin:0 0 85px;max-width:780px}
 .arrival h2{font-size:38px}.arrival p{margin:20px 0}.arrival .button{border-color:var(--blue);color:var(--blue)}
 .arrival .small{font-size:12px;max-width:550px}
+.editorial>.button{margin-top:26px}
+.situation-list{border-top:2px solid var(--ink)}
+.situation-list article{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:65px;padding:30px 0;border-bottom:1px solid var(--line)}
+.situation-list h3{font-size:34px;line-height:1.2;font-weight:400}
+.situation-list p{max-width:570px;font-size:15px}
+.situation-list .text-link{margin-top:18px;font-size:13px}
+.situation-list .delivery-situation{border-left:5px solid var(--orange);padding-left:24px;background:#edf1ee}
+.service-strip a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:640px){.situation-list .delivery-situation{padding-left:17px;padding-right:14px}}
+.contact-actions .email-note{font-size:12px;line-height:1.7}
+.contact-actions .brief-download{font-size:12px;margin:4px 0}
+@media(max-width:850px){.situation-list article{gap:35px}.situation-list h3{font-size:31px}}
+@media(max-width:640px){.situation-list article{grid-template-columns:1fr;gap:16px;padding:25px 0}.situation-list h3{font-size:29px}.situation-list p{font-size:14px}.situation-list .text-link{margin-top:16px}}
 @media(max-width:640px){.related-services{grid-template-columns:1fr;gap:22px;padding-top:34px;margin-top:20px}.related-services h2{font-size:29px}.related-services a{font-size:14px}.arrival{margin-bottom:55px}.arrival h2{font-size:32px}.arrival .button{font-size:13px}.arrival p{font-size:14px}}

@@ -63,6 +63,6 @@ document.querySelectorAll('.lead-form').forEach(form=>form.addEventListener('sub
   event.preventDefault(); const output=form.querySelector('.form-result');
   if(!form.checkValidity() || !form.elements.product.value.trim()) {output.textContent='Укажите товар и целое количество от 1 до 1 000 000.';form.reportValidity();return;}
   const product=form.elements.product.value.trim();
-  output.textContent=`Пример заявки: ${product}, ${form.elements.quantity.value} шт. Заявка не отправлена. Для запуска сайта нужно подключить прием обращений.`;
+  output.textContent=`Пример заявки: ${product}, ${form.elements.quantity.value} шт. Заявка не отправлена.`;
 }));
 document.querySelectorAll('.lead-form button[type="submit"]').forEach(button=>{button.disabled=false;});

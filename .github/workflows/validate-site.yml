@@ -1,0 +1,20 @@
+name: Validate site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build and validate the static site
+        run: |
+          python site/build.py
+          python site/check.py

@@ -1,3 +1,3 @@
 User-agent: *
 Disallow: /
-Sitemap: https://nbnandreu-svg.github.io/partiya-yug/sitemap.xml
+Sitemap: https://yugful.ru/sitemap.xml
